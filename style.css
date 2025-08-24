@@ -1,0 +1,191 @@
+/* CSS Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: red;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: blue;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+header h1 {
+    color: white;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #2c3e50;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav li {
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3498db;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Box Model Demonstration */
+.box-model-demo {
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.margin {
+    background-color: #f8efba;
+    padding: 40px;
+    margin: 20px;
+    border: 2px dashed #eccc68;
+}
+
+.border {
+    background-color: #ffb8b8;
+    padding: 40px;
+    border: 15px solid #ff4757;
+}
+
+.padding {
+    background-color: #badc58;
+    padding: 40px;
+    border: 2px dashed #6ab04c;
+}
+
+.content {
+    background-color: #7ed6df;
+    padding: 40px;
+    border: 2px solid #22a6b3;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #dfe6e9;
+    border: 1px solid #b2bec3;
+    border-radius: 5px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .card-container {
+        flex-direction: column;
+    }
+}
